@@ -11,27 +11,15 @@
     <script type="text/javascript">
         // websocket with single user example
         lanyard({
-            userId: "213325478096797697",
+            userId: "805496535290085396",
             socket: true,
             onPresenceUpdate: console.log // presenceData
         }) // returns a websocket
 
-        // websocket with multiple users example
-        lanyard({
-            userId: ["213325478096797697", "331846231514939392"],
-            socket: true,
-            onPresenceUpdate: console.log // presenceData[]
-        }) // returns a websocket
-
         // rest with single user example
         lanyard({
-            userId: "213325478096797697",
+            userId: "805496535290085396",
         }).then(console.log) // presenceData
-
-        // rest with multiple  users example
-        lanyard({
-            userId: ["213325478096797697", "331846231514939392"],
-        }).then(console.log) // presenceData[]
     </script>
 </body>
 </html>
